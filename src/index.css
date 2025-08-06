@@ -25,10 +25,21 @@ body {
   color: var(--foreground);
   min-height: 100vh;
 }
+
+table,
+th,
+td {
+  @apply border border-foreground w-3/4 px-2 py-1;
+}
+
+tr th {
+  @apply dark:bg-primary bg-secondary text-[#f5f5f5];
+}
+
 .page-layout {
   @apply py-24 px-3 lg:px-10 min-h-screen w-full inline-flex;
 }
 
 .navbar {
-  @apply dark:bg-primary bg-secondary w-screen fixed lg:px-10;
+  @apply dark:bg-primary bg-secondary w-screen fixed lg:px-10 text-[#f5f5f5];
 }

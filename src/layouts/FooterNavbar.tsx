@@ -2,7 +2,9 @@ import {
   HomeIcon,
   InformationCircleIcon,
   PhoneIcon,
+  TableCellsIcon,
 } from "@heroicons/react/24/solid";
+import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import NavbarLinks from "../components/NavbarLinks";
 
 const FooterNavbar = () => {
@@ -14,7 +16,13 @@ const FooterNavbar = () => {
         icon={<InformationCircleIcon />}
         label={"About"}
       />
+      <NavbarLinks
+        to="/add-data"
+        icon={<PlusCircleIcon />}
+        label={"Tambah Data"}
+      />
       <NavbarLinks to="/contact" icon={<PhoneIcon />} label={"Contact"} />
+      <NavbarLinks to="/data" icon={<TableCellsIcon />} label={"Data"} />
     </div>
   );
 };
