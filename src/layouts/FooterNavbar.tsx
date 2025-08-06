@@ -1,7 +1,20 @@
+import {
+  HomeIcon,
+  InformationCircleIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/solid";
+import NavbarLinks from "../components/NavbarLinks";
+
 const FooterNavbar = () => {
   return (
-    <div className="bg-primary w-screen fixed py-5 px-3">
-      <h1>Navbar</h1>
+    <div className="navbar bottom-0 py-5 flex justify-around">
+      <NavbarLinks to="/" icon={<HomeIcon />} label={"Home"} />
+      <NavbarLinks
+        to="/about"
+        icon={<InformationCircleIcon />}
+        label={"About"}
+      />
+      <NavbarLinks to="/contact" icon={<PhoneIcon />} label={"Contact"} />
     </div>
   );
 };

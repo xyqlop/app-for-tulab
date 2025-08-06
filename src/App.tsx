@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import PageLayout from "./layouts/PageLayout";
 import HeaderNavbar from "./layouts/HeaderNavbar";
+import FooterNavbar from "./layouts/FooterNavbar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </PageLayout>
+      <FooterNavbar />
     </>
   );
 }
