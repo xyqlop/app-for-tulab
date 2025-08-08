@@ -12,12 +12,21 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-dark: #030712;
+  --color-light: #f5f5f5;
+  --color-success: #091538;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #030712;
     --foreground: #f5f5f5;
+  }
+  .click-effect {
+    box-shadow: 0 5px #7c7c7c;
+  }
+  .click-effect:active {
+    box-shadow: 0 1px #7c7c7c;
   }
 }
 body {
@@ -36,10 +45,25 @@ tr th {
   @apply dark:bg-primary bg-secondary text-[#f5f5f5];
 }
 
+.input-box {
+  @apply border border-dark dark:border-light py-1 px-2 bg-neutral-300 dark:bg-background rounded placeholder:capitalize placeholder:text-neutral-500;
+}
+
+.input-container {
+  @apply flex flex-col gap-2 justify-between capitalize;
+}
+
 .page-layout {
   @apply py-24 px-3 lg:px-10 min-h-screen w-full inline-flex;
 }
 
 .navbar {
   @apply dark:bg-primary bg-secondary w-screen fixed lg:px-10 text-[#f5f5f5];
+}
+
+.click-effect {
+  box-shadow: 0 5px #a2a2a2;
+}
+.click-effect:active {
+  box-shadow: 0 1px #a2a2a2;
 }

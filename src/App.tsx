@@ -4,6 +4,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 import PageLayout from "./layouts/PageLayout";
 import HeaderNavbar from "./layouts/HeaderNavbar";
 import FooterNavbar from "./layouts/FooterNavbar";
+import AddDataPage from "./pages/AddDataPage";
+import DataPage from "./pages/DataPage";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <PageLayout>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/add-data" element={<AddDataPage />} />
+          <Route path="/data" element={<DataPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </PageLayout>

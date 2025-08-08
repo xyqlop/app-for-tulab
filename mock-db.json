@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": "b3ef",
+      "nama": "Ripaldi",
+      "kelas": "Khirrijin",
+      "kamar": "Maktabah"
+    },
+    {
+      "id": "f1fb",
+      "nama": "Amin",
+      "kelas": "Khirrijin",
+      "kamar": "Maktabah"
+    },
+    {
+      "id": "2d2b",
+      "nama": "Drajat",
+      "kelas": "Takhasus",
+      "kamar": "Kantin"
+    }
+  ]
+}
