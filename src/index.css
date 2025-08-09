@@ -35,14 +35,20 @@ body {
   min-height: 100vh;
 }
 
+table {
+  @apply w-full md:w-3/4;
+}
 table,
 th,
 td {
-  @apply border border-foreground w-3/4 px-2 py-1;
+  @apply border border-foreground px-2 py-1;
 }
 
 tr th {
   @apply dark:bg-primary bg-secondary text-[#f5f5f5];
+}
+th {
+  @apply uppercase;
 }
 
 .input-box {

@@ -2,12 +2,34 @@ import { FormProvider, useForm } from "react-hook-form";
 import InputForm from "../components/InputForm";
 import { useAddData } from "../services/form.service";
 import { Bounce, ToastContainer, toast } from "react-toastify";
+import SelectInput from "../components/SelectInput";
 
 type InputType = {
+  id: string;
   nama: string;
   kelas: string;
   kamar: string;
 };
+
+const classes: string[] = [
+  "khirrijin",
+  "takhasus",
+  "aliyah",
+  "tsanawiy",
+  "ibtida'",
+  "i'dad",
+  "isti'dad",
+];
+
+const rooms: string[] = [
+  "ash-shiddiq",
+  "al-faruq",
+  "dzunnurain",
+  "at-tohir",
+  "al-qosim",
+  "al-husein",
+  "al-hasan",
+];
 
 const AddDataPage = () => {
   const methods = useForm();
@@ -29,7 +51,10 @@ const AddDataPage = () => {
       });
       return;
     }
-    await addData("http://localhost:2000/students", data);
+    data.nama = data.nama.toLowerCase();
+    data.kelas = data.kelas.toLowerCase();
+    data.kamar = data.kamar.toLowerCase();
+    await addData("http://10.113.32.249:2000/students", data);
   };
 
   return (
@@ -40,8 +65,8 @@ const AddDataPage = () => {
           <form onSubmit={methods.handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-5">
               <InputForm label="nama" type="text" placeholder="john doe" />
-              <InputForm label="kelas" type="text" placeholder="kelas" />
-              <InputForm label="kamar" type="text" placeholder="kamar" />
+              <SelectInput label="kelas" options={classes} />
+              <SelectInput label="kamar" options={rooms} />
             </div>
             <button
               type="submit"

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 
 interface Data {
+  id: string;
   nama: string;
   kelas: string;
   kamar: string;
@@ -16,7 +17,10 @@ export const useAddData = () => {
   return { addData };
 };
 
-export const useGetData = () => {
+export const useGetData = (): {
+  data: Data[];
+  getData: (url: string) => void;
+} => {
   const [data, setData] = useState<Data[]>([]);
 
   const getData = async (url: string) => {

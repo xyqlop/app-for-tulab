@@ -1,22 +1,52 @@
 {
   "students": [
     {
-      "id": "b3ef",
-      "nama": "Ripaldi",
-      "kelas": "Khirrijin",
-      "kamar": "Maktabah"
+      "id": "8ead",
+      "nama": "Fulan",
+      "kelas": "tsanawiy",
+      "kamar": "ash-shiddiq"
     },
     {
-      "id": "f1fb",
-      "nama": "Amin",
-      "kelas": "Khirrijin",
-      "kamar": "Maktabah"
+      "id": "51f4",
+      "nama": "woyy",
+      "kelas": "takhasus",
+      "kamar": "at-tohir"
     },
     {
-      "id": "2d2b",
-      "nama": "Drajat",
-      "kelas": "Takhasus",
-      "kamar": "Kantin"
+      "id": "f435",
+      "nama": "rifa",
+      "kelas": "khirrijin",
+      "kamar": "al-qosim"
+    },
+    {
+      "id": "bf95",
+      "nama": "yfufu",
+      "kelas": "takhasus",
+      "kamar": "al-hasan"
+    },
+    {
+      "id": "2eb3",
+      "nama": "m. falah islami rifa'a",
+      "kelas": "khirrijin",
+      "kamar": "al-faruq"
+    },
+    {
+      "id": "b878",
+      "nama": "ismail aditya",
+      "kelas": "khirrijin",
+      "kamar": "ash-shiddiq"
+    },
+    {
+      "id": "c04a",
+      "nama": "fdafdafdafdafdafdafdadaffdsaaaaaaa",
+      "kelas": "khirrijin",
+      "kamar": "ash-shiddiq"
+    },
+    {
+      "id": "ed65",
+      "nama": "rifa ganteng",
+      "kelas": "tsanawiy",
+      "kamar": "al-hasan"
     }
   ]
 }
